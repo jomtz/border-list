@@ -1,4 +1,4 @@
-package com.borderlist.ui.home
+package com.borderlist.viewmodels
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData

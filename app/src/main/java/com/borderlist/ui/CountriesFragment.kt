@@ -4,15 +4,14 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
-import com.borderlist.databinding.FragmentLocationsBinding
-import com.borderlist.viewmodels.LocationsViewModel
+import com.borderlist.databinding.FragmentCountriesBinding
+import com.borderlist.viewmodels.CountriesViewModel
 
-class LocationsFragment : Fragment() {
+class CountriesFragment : Fragment() {
 
-    private var _binding: FragmentLocationsBinding? = null
+    private var _binding: FragmentCountriesBinding? = null
 
     // This property is only valid between onCreateView and
     // onDestroyView.
@@ -24,14 +23,12 @@ class LocationsFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
         val dashboardViewModel =
-            ViewModelProvider(this).get(LocationsViewModel::class.java)
+            ViewModelProvider(this).get(CountriesViewModel::class.java)
 
-        _binding = FragmentLocationsBinding.inflate(inflater, container, false)
+        _binding = FragmentCountriesBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
-        val textView: TextView = binding.textDashboard
         dashboardViewModel.text.observe(viewLifecycleOwner) {
-            textView.text = it
         }
         return root
     }

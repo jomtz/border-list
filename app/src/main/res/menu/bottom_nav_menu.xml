@@ -7,9 +7,9 @@
         android:title="@string/title_home" />
 
     <item
-        android:id="@+id/navigation_locations"
+        android:id="@+id/navigation_countries"
         android:icon="@drawable/ic_baseline_map_24"
-        android:title="@string/title_locations" />
+        android:title="@string/title_countries" />
 
     <item
         android:id="@+id/navigation_settings"

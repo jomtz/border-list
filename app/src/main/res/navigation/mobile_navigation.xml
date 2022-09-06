@@ -12,10 +12,10 @@
         tools:layout="@layout/fragment_home" />
 
     <fragment
-        android:id="@+id/navigation_locations"
-        android:name="com.borderlist.ui.LocationsFragment"
-        android:label="@string/title_locations"
-        tools:layout="@layout/fragment_locations" />
+        android:id="@+id/navigation_countries"
+        android:name="com.borderlist.ui.CountriesFragment"
+        android:label="@string/title_countries"
+        tools:layout="@layout/fragment_countries" />
 
     <fragment
         android:id="@+id/navigation_settings"
